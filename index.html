@@ -7,41 +7,37 @@
   <link href="style.css" rel="stylesheet">
 </head>
 <body>
-  <div class="calc">
-    <section class="screen">
-      0
-    </section>
-    <section class="calc-buttons">
-      <div class="calc-button-row">
-        <button class="double calc-button">C</button>
-        <button class="calc-button">←</button>
-        <button class="calc-button">÷</button>
-      </div>
-      <div class="calc-button-row">
-        <button class="calc-button">7</button>
-        <button class="calc-button">8</button>
-        <button class="calc-button">9</button>
-        <button class="calc-button">x</button>
-      </div>
-      <div class="calc-button-row">
-        <button class="calc-button">4</button>
-        <button class="calc-button">5</button>
-        <button class="calc-button">6</button>
-        <button class="calc-button">-</button>
-      </div>
-      <div class="calc-button-row">
-          <button class="calc-button">1</button>
-          <button class="calc-button">2</button>
-          <button class="calc-button">3</button>
-          <button class="calc-button">+</button>
-        </div>
-      <div class="calc-button-row">
-        <button class="triple calc-button">0</button>
-        <button class="calc-button">=</button>
-      </div>
-    </section>
-  </div>
+  <div class="calculator">
 
+    <input type="text" class="calculator-screen" value="" disabled />
+      
+    <div class="calculator-keys">
+      
+      <button type="button" class="operator" value="+">+</button>
+      <button type="button" class="operator" value="-">-</button>
+      <button type="button" class="operator" value="*">&times;</button>
+      <button type="button" class="operator" value="/">&divide;</button>
+  
+      <button type="button" value="7">7</button>
+      <button type="button" value="8">8</button>
+      <button type="button" value="9">9</button>
+  
+      <button type="button" value="4">4</button>
+      <button type="button" value="5">5</button>
+      <button type="button" value="6">6</button>
+  
+      <button type="button" value="1">1</button>
+      <button type="button" value="2">2</button>
+      <button type="button" value="3">3</button>
+  
+      <button type="button" value="0">0</button>
+      <button type="button" class="decimal" value=".">.</button>
+      <button type="button" class="all-clear" value="all-clear">AC</button>
+  
+      <button type="button" class="equal-sign operator" value="=">=</button>
+      </div>
+  </div>
+  
   <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
