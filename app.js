@@ -19,7 +19,7 @@ const inputDigit = digit => {
 const inputDecimal = dot => {
 
   if (calculator.waitingForSecondOperand === true) return;
-  
+
   if (!calculator.displayValue.includes(dot)) {
     calculator.displayValue += dot;
   }
@@ -49,13 +49,9 @@ const handleOperator = nextOperator => {
 
 const performCalculation = {
   '/': (firstOperand, secondOperand) => firstOperand / secondOperand,
-
   '*': (firstOperand, secondOperand) => firstOperand * secondOperand,
-
   '+': (firstOperand, secondOperand) => firstOperand + secondOperand,
-
   '-': (firstOperand, secondOperand) => firstOperand - secondOperand,
-
   '=': (firstOperand, secondOperand) => secondOperand
 };
 
